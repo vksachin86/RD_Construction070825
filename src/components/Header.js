@@ -30,7 +30,7 @@ const Header = () => {
         <div className="navbar-container">
           <div className="nav-brand">
             <Link to="/">
-              <img src="/rd-icon.png" alt="RD Construction Logo" />
+              <img src="/rd-icon.png" alt="RD Construction Logo" className="logo-img" />
             </Link>
           </div>
           
@@ -47,13 +47,10 @@ const Header = () => {
                 <Link className="nav-link" to="/about" onClick={() => setIsMenuOpen(false)}>About</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/services" onClick={() => setIsMenuOpen(false)}>Services</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/blog" onClick={() => setIsMenuOpen(false)}>Projects</Link>
-              </li>
-              <li className="nav-item">
                 <Link className="nav-link" to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link>
+              </li>
+              <li className="nav-item cta-btn">
+                <Link className="btn btn-primary" to="/contact" onClick={() => setIsMenuOpen(false)}>Get Quote</Link>
               </li>
             </ul>
             
